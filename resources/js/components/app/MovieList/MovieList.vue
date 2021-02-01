@@ -20,11 +20,11 @@
         <div class="submit-btns container">
             <div class="row">
                 <div class="col">
-                    <img @click="saveMovies()" :src="`${$store.state.appUrl}/storage/save.png`" alt="">
+                    <img @click="saveMovies()" src="images/save.png" alt="">
                     <p @click="saveMovies()">Save</p>
                 </div>
                 <div class="col">
-                    <img @click="shareMovies()" :src="`${$store.state.appUrl}/storage/share.png`" alt="">
+                    <img @click="shareMovies()" src="images/share.png" alt="">
                     <p @click="shareMovies()">Share</p>
                 </div>
             </div>

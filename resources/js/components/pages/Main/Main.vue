@@ -8,7 +8,7 @@
                     @click="unselectMovie(movie.id)">
                         <p>{{movie.original_title}} {{movie.release_date ? '('+movie.release_date.split('-')[0]+')' : ''}}</p>
                         <img v-if="movie.backdrop_path" :src="`${$store.state.imageAPI.url}/w${$store.state.imageAPI.size}/${movie.backdrop_path}`" :alt="movie.original_title">
-                        <img v-else :src="`${$store.state.appUrl}/storage/no-image.jpg`" alt="">
+                        <img v-else src="images/no-image.jpg" alt="">
                         <button id="add-to-mylist" class="selected-btn" disabled @click.stop="selectMovie(movie.id)">&#10004;</button>
                     </div>
                     <div v-else class="movie" :ref="movie.id" 
@@ -16,7 +16,7 @@
                     @click="unselectMovie(movie.id)">
                         <p>{{movie.original_title}} {{movie.release_date ? '('+movie.release_date.split('-')[0]+')' : ''}}</p>
                         <img v-if="movie.backdrop_path" :src="`${$store.state.imageAPI.url}/w${$store.state.imageAPI.size}/${movie.backdrop_path}`" :alt="movie.original_title">
-                        <img v-else :src="`${$store.state.appUrl}/storage/no-image.jpg`" alt="">
+                        <img v-else src="images/no-image.jpg" alt="">
                         <button id="add-to-mylist" @click.stop="selectMovie(movie.id)">&#10010;</button>
                     </div>
                 </div>

@@ -24222,10 +24222,7 @@ var render = function() {
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col" }, [
             _c("img", {
-              attrs: {
-                src: _vm.$store.state.appUrl + "/storage/save.png",
-                alt: ""
-              },
+              attrs: { src: "images/save.png", alt: "" },
               on: {
                 click: function($event) {
                   return _vm.saveMovies()
@@ -24248,10 +24245,7 @@ var render = function() {
           _vm._v(" "),
           _c("div", { staticClass: "col" }, [
             _c("img", {
-              attrs: {
-                src: _vm.$store.state.appUrl + "/storage/share.png",
-                alt: ""
-              },
+              attrs: { src: "images/share.png", alt: "" },
               on: {
                 click: function($event) {
                   return _vm.shareMovies()
@@ -24373,12 +24367,7 @@ var render = function() {
                               }
                             })
                           : _c("img", {
-                              attrs: {
-                                src:
-                                  _vm.$store.state.appUrl +
-                                  "/storage/no-image.jpg",
-                                alt: ""
-                              }
+                              attrs: { src: "images/no-image.jpg", alt: "" }
                             }),
                         _vm._v(" "),
                         _c(
@@ -24443,12 +24432,7 @@ var render = function() {
                               }
                             })
                           : _c("img", {
-                              attrs: {
-                                src:
-                                  _vm.$store.state.appUrl +
-                                  "/storage/no-image.jpg",
-                                alt: ""
-                              }
+                              attrs: { src: "images/no-image.jpg", alt: "" }
                             }),
                         _vm._v(" "),
                         _c(
